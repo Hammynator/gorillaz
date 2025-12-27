@@ -1,0 +1,32 @@
+.card-img-top {
+    height: 300px;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    font-size: 300px;
+}
+
+.card-text {
+    text-align:center;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#albumHeading {
+    font-size:30px;
+    bottom:0px;
+}
+
+#gorillazHeading {
+    height: 350px;
+    background-image: url('images/banner.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+@media (min-width: 992px) {
+    #gorillazHeading {
+        height: 600px;
+    }
+}
