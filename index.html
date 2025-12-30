@@ -7,6 +7,23 @@
     </head>
 
     <body>
+        <section id="contactSection" class="py-0"></section>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">gorillaz</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#contactSection">Top</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#albumSection">Albums</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#memberSection">Members</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
         <div class="w-100 position-relative d-flex align-items-center" id="gorillazHeading">
             <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></div>
 
@@ -15,11 +32,11 @@
                 <p class="lead">Animated band from the UK</p>
             </div>
         </div>
-        
+        <section id="albumSection" class="py-5 bg-light">
         <div class="container my-5">
             <p class="text-center fw-bold mb-4" id="albumHeading">Albums</p>
             <hr>
-            <div class="row g-4">    
+            <div class="row g-4 justify-content-center">    
                 <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                 <div class="card h-100">
                     <img src="images/albumcovers/gorillaz.jpg" class="card-img-top album-img" data-index="0">
@@ -93,10 +110,12 @@
                 </div>
             </div>
         </div>
+        </section>
 
         <div style="height: 200px"></div>
 
-        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000" data-bs-theme="dark">
+        <section id="memberSection" class="py-5"></section>
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000" data-bs-pause="false" data-bs-theme="dark">
             <div class="carousel-inner">
                 <div class="carousel-item active">
                 <img src="images/phases/phase2/stuart.jpg" class="d-block w-50">
@@ -171,6 +190,10 @@
                         modal.show();
                     });
                 });
+            });
+
+            window.addEventListener('DOMContentLoaded', () => {
+                document.body.style.opacity = '1';
             });
         </script>
     </body>
